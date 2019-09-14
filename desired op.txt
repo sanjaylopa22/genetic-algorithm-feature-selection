@@ -1,0 +1,42 @@
+stringdemo.java program::
+
+public class stringdemo
+{
+	  public static void main(String args[]) throws Exception
+         {
+	    String str = "1. int-discolor=none 581 ==> sclerotia=absent 581    conf:(1)";
+	    //System.out.println(java.util.Arrays.toString(testString.split("\\.") ));
+	    //String testString1 = java.util.Arrays.toString(testString.split("\\.") );
+	    //String delims = "[ .,?!]+";
+	    String delims = "[.' ''==>':()]+";
+	    String[] tokens = str.split(delims);
+	    for (int i = 0; i < tokens.length; i++)
+	    {
+	     /* int ar[],L_I_S[10],R_I_s[10],j;
+	      double conf[];
+	      char left_items[],right_items[];
+	      ar[0]=tokens[0];
+	      L_I_S[0]=tokens[1];
+	      System.out.println();*/
+	        System.out.println(tokens[i]);
+
+	    }
+	}
+}
+op:
+1
+int-discolor
+none
+581
+sclerotia
+absent
+581
+conf
+1
+desired op => values store in var.
+rule id=> 1
+left_item => int-discolor=none
+left_item_supp=>581
+right_item =>sclerotia=absent
+right_item_supp =>581
+confidence=>1
